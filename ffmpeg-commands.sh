@@ -11,17 +11,27 @@ TRAILER1="gta6-trailer1.mp4"   # Trailer 1 GTA VI
 VOICEOVER="voiceover.m4a"      # Rekaman voiceover sesuai script.md (opsional kalau pakai TTS)
 MUSIC="music.m4a"              # Musik bebas lisensi (YouTube Audio Library)
 
-# Timecode adegan (detik di file trailer) — CARI DULU di trailer, jangan tebak:
-# A = split 2013 vs 2026 (Trailer 1, suasana Los Santos / Trailer 2, Vice City)
-# B..E = 4 adegan montase Trailer 2 (pantai, Ocean Drive neon, Lucia keluar penjara,
-#         Jason menjemput, jalanan Leonida) — masing-masing ~2 detik
-# F = satu shot tenang pantai untuk pitch make.fun di 0:23-0:30 (~7 detik)
-A1_START=0 A1_END=0
-B_START=0 B_END=0
-C_START=0 C_END=0
-D_START=0 D_END=0
-E_START=0 E_END=0
-F_START=0 F_END=0
+# Timecode adegan (detik di file trailer) — DIVERIFIKASI dari frame (contact sheet + strip 1fps + scene detection), 21 Nov 2026:
+# A kiri  = GTA V trailer 11.6-16.6 (palem + skyline Los Santos; crop tepi kiri; 5.0s -> 6s)
+# A kanan = GTA VI Trailer 1 11.0-17.0 (aerial pantai Vice City, 6s)
+# B = Trailer 2 39.0-41.0 (pantai Vice City ramai, bench press)
+# C = Trailer 2 127.0-129.0 (Ocean Drive neon malam)
+# D = Trailer 2 64.0-66.0 (Lucia keluar penjara + Jason menjemput)
+# E = Trailer 2 35.2-37.2 (jalanan Leonida siang, highway + pesawat)
+# MID = Trailer 2 45.2-50.0 (driving mural street, 4.8s -> slow-mo 7s; tiga kartu teks)
+# F = Trailer 2 38.5-41.5 (pantai bench press, 3.0s -> slow-mo 7s; bookend dengan B)
+# CATATAN: template ini TIDAK dipakai untuk render final karena (1) concat-nya hanya 23 detik
+# (segmen MID 0:16-0:23 tidak ada) dan (2) hook lavfi default 25fps. Render final memakai
+# production/build.sh (perbaikan di atas + split-screen A + VO + bed audio). Hasil terverifikasi:
+# gta6-13-tahun-short.mp4 — 30.000 detik, 1080x1920, 30fps, H.264+AAC, ~17,7 MB.
+A1_START=11.6 A1_END=16.6
+A2_START=11.0 A2_END=17.0
+B_START=39.0 B_END=41.0
+C_START=127.0 C_END=129.0
+D_START=64.0 D_END=66.0
+E_START=35.2 E_END=37.2
+MID_START=45.2 MID_END=50.0
+F_START=38.5 F_END=41.5
 
 # --- Potong tiap segmen jadi vertikal 1080x1920 ---
 # (crop tengah 9:16 dari 16:9, scale ke 1080x1920, 30fps)
