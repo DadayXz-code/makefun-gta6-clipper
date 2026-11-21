@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2b1055"/>
+      <stop offset="0.45" stop-color="#7597de"/>
+      <stop offset="0.7" stop-color="#ff7e5f"/>
+      <stop offset="1" stop-color="#feb47b"/>
+    </linearGradient>
+  </defs>
+  <rect width="1080" height="1920" fill="url(#sky)"/>
+  <circle cx="540" cy="1050" r="260" fill="#fff3b0" opacity="0.9"/>
+  <rect y="1250" width="1080" height="670" fill="#1a0b2e"/>
+  <!-- palm silhouettes (original simple shapes) -->
+  <path d="M120 1250 q40 -260 180 -300 q-120 30 -150 120 q90 -60 170 -40 q-70 10 -90 90 q60 -30 120 -10 q-90 40 -110 140 z" fill="#12061f"/>
+  <path d="M960 1250 q-40 -260 -180 -300 q120 30 150 120 q-90 -60 -170 -40 q70 10 90 90 q-60 -30 -120 -10 q90 40 110 140 z" fill="#12061f"/>
+  <text x="540" y="330" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="190" font-weight="bold" fill="#ffffff" stroke="#000000" stroke-width="6">13 TAHUN</text>
+  <text x="540" y="520" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="72" font-weight="bold" fill="#ffffff" stroke="#000000" stroke-width="4">NUNGGU GTA 6</text>
+  <text x="540" y="640" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="64" fill="#ffe066">WORTH IT?</text>
+  <text x="540" y="1560" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="96" font-weight="bold" fill="#ffffff">GTA VI</text>
+  <text x="540" y="1660" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="44" fill="#ffffff">VICE CITY • LEONIDA</text>
+</svg>

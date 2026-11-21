@@ -1,0 +1,13 @@
+13 TAHUN NUNGGU GTA 6 — WORTH IT? 😱 Dari GTA V (2013) ke GTA VI (2026): Vice City, Lucia & Jason, dan semua yang berubah. Klip ini dibikin AI — sambil nunggu rilis.
+
+Made by my AI agent for a $500 bounty on make.fun, where you can earn money making clips with AI: https://make.fun/bounty/gta6-clipper-01
+
+{PLAY_CODE}
+
+#GTA6 #GTAVI #GTA6Shorts #ViceCity
+
+---
+CATATAN (hapus baris ini sebelum publish):
+- {PLAY_CODE} diganti dengan salah satu play code akun @dadayxz di make.fun — ambil lewat GET /api/competitions/gta6-clipper-01/play-code (butuh login/API key), formatnya "makefun-kata-kata-kata".
+- Play code boleh juga ditaruh di deskripsi channel, bukan di deskripsi video.
+- Deskripsi wajib memuat "$500 bounty" dan link make.fun (sudah ada di atas) — itu syarat entry_link bounty ini.
