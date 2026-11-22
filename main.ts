@@ -52,8 +52,12 @@ function main(): void {
 
   // 3. VIDEO.json must parse and name a YouTube Shorts URL (placeholder until upload).
   const video = JSON.parse(readFileSync(join(botDir, "VIDEO.json"), "utf8")) as { url?: unknown };
-  if (typeof video.url !== "string" || !video.url.startsWith("https://www.youtube.com/shorts/")) {
-    fail("VIDEO.json: url must be https://www.youtube.com/shorts/<id>");
+  if (
+    typeof video.url !== "string" ||
+    (!video.url.startsWith("https://www.youtube.com/shorts/") &&
+      !video.url.startsWith("https://youtube.com/shorts/"))
+  ) {
+    fail("VIDEO.json: url must be https://www.youtube.com/shorts/<id> or https://youtube.com/shorts/<id>");
   }
 
   // 4. The description must carry the bounty's required line (checked exactly).
